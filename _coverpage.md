@@ -11,5 +11,5 @@
 - VUE
 - ...
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/XiJieYin/XiJieYin.github.io/tree/docs)
 [Get Started](home.md)
