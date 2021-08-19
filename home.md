@@ -3,4 +3,4 @@
 
 ---
 
-[一个菜鸟程序员的技术栈](./_media/skill.pdf)
+[一个菜鸟程序员的技术栈](https://www.xijieyin.xyz/_media/skill.pdf)
