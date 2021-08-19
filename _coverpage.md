@@ -2,7 +2,7 @@
 
 ![logo](_media/icon.svg)
 
-# docsify <small>3.5</small>
+# Edit by docsify <small>3.5</small>
 
 > 一个菜鸟程序员的技术栈。
 
