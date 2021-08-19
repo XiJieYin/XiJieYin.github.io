@@ -1,3 +1,1 @@
-# XiJieYin.github.io
-建议先去 
-
+> 如何使程序正常运行 
