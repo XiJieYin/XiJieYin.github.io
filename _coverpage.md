@@ -4,11 +4,12 @@
 
 # docsify <small>3.5</small>
 
-> 一个神奇的文档网站生成器。
+> 一个菜鸟程序员的技术栈。
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- Spring、Maven、Mybatis
+- MySQL、Redis、MongoDB
+- VUE
+- ...
 
 [GitHub](https://github.com/docsifyjs/docsify/)
 [Get Started](home.md)
