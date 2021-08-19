@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>一个菜鸟程序员的技术栈</title>
+  <link rel="icon" href="./_media/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dolphin.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <!-- Theme: Simple Dark -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+
+  <!-- 折叠sidebar -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+  <style type="text/css">
+    body {
+      overflow: auto !important;
+    }
+    :root {
+      --docsifytabs-border-color: #ededed;
+      --docsifytabs-tab-highlight-color: purple;
+    }
+    
+    /*修改滚动条样式*/
+    *::-webkit-scrollbar {
+      width: 8px !important;
+      height: 10px !important;
+    }
+    *::-webkit-scrollbar-track {
+      background: rgb(239, 239, 239) !important;
+      border-radius: 2px !important;
+    }
+    *::-webkit-scrollbar-thumb {
+      background: #bfbfbf !important;
+      border-radius: 10px !important;
+    }
+    *::-webkit-scrollbar-thumb:hover {
+      background: rgb(80, 80, 80) !important;
+    }
+    *::-webkit-scrollbar-corner {
+      background: #e9be37 !important;
+    }
+    /* body {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+    } */
+    body {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>  
+  <div id="app">
+    <div style="width: 100%;text-align: center;">
+      <img style="margin: 50px auto;" src="/images/loading.gif"/>
+    </div>    
+  </div>
+  <script>
+    // var jsResources = '<scr' + 'ipt src="//unpkg.com/vue/dist/vue.js"></scr' + 'ipt>';
+    // var cssResources = '@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");';
+    // var bootCode = 'var globalVariable = "leon"';
+    // var globalVariable = "leon";
+    window.$docsify = {
+      repo: 'https://github.com/XiJieYin/XiJieYin.github.io',
+      plugins: [
+        // EditOnGithubPlugin.create(docBase, docEditBase, title) //在git上编辑 文档地址,null,title
+        // DemoBoxVue.create(jsResources, cssResources, bootCode)
+        // DocsifyCodefund.create('51d43327-eea3-4e27-bd44-e075e67a84fb') // 把这个id改成你的codefund id
+      ],
+      maxLevel: 6,//默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
+      //显示导航栏
+      loadNavbar: true,
+      // loadNavbar: 'nav.md',//自定义导航栏
+      sidebarDisplayLevel: 6, // set sidebar display level
+      loadSidebar: true, //侧边栏
+      // hideSidebar: true,
+      // loadSidebar: 'summary.md',//自定义侧边栏
+      // themeColor: '#00F5FF',
+      //设置去掉多余的sidebar回退过程
+      subMaxLevel: 6,//自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
+      auto2top: true,//切换页面后是否自动跳转到页面顶部。
+      homepage: 'home',//设置首页文件加载路径。适合不想将 README.md 作为入口文件渲染，或者是文档存放在其他位置的情况使用。
+      // basePath: '/docs/',//文档加载的根路径，可以是二级路径或者是其他域名的路径。      
+      // relativePath: false,// 禁用相对路径（默认值）
+      //定义路由别名，可以更自由的定义路由规则。 支持正则。
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md' : '/_navbar.md',
+      },
+      coverpage: true,//封面
+      // logo: '/_media/icon.svg',//侧边栏中出现的网站图标
+      name: '一个菜鸟程序员的技术栈',//文档标题，会显示在侧边栏顶部。
+      nameLink: '/',//点击文档标题后跳转的链接地址。
+      autoHeader: true,
+      mergeNavbar: true,//小屏设备下合并导航栏到侧边栏。
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',//我们可以通过 {docsify-updated} 变量显示文档更新日期. 并且通过 formatUpdated配置日期格式
+      externalLinkTarget: '_blank', // default: '_blank' _self 外部链接的打开方式。默认为 _blank （在新窗口或者标签页中打开）
+      cornerExternalLinkTarget: '_blank', //右上角链接的打开方式。
+      externalLinkRel:'noopener',//可以防止新打开的外部页面能够控制我们的页面
+      routerMode:'hash',//history
+      // crossOriginLinks:[], //当设置了routerMode:'history'时，你可能会面临跨域的问题
+      // noCompileLinks:[],//有时我们不希望 docsify 处理我们的链接
+      onlyCover: true,//只在访问主页时加载封面。
+      // requestHeaders: {//设置请求资源的请求头。
+      //   'x-token': 'xxx',
+      // },
+      // ext: '.md',//资源的文件扩展名。
+      // fallbackLanguages:[],//一个语言列表。在浏览这个列表中的语言的翻译文档时都会在请求到一个对应语言的翻译文档，不存在时显示默认语言的同名文档
+      notFoundPage: '_404.md',//在找不到指定页面时加载
+      topMargin: 90,//让你的内容页在滚动到指定的锚点时，距离页面顶部有一定空间。当你使用 固定页头 布局时这个选项很有用，可以让你的锚点对齐标题栏。
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: [], // or 'auto'
+        placeholder: 'Type to search',
+        // 支持本地化
+        placeholder: {
+          '/': '搜索'
+        },
+        noData: 'No Results!',
+        // 支持本地化
+        noData: {
+          '/': '没有结果!'
+        },
+        // 搜索标题的最大层级, 1 - 6
+        depth: 6,
+      },
+      // 谷歌统计
+      // ga: 'UA-XXXXX-Y',
+      //代码复制
+      copyCode: {
+        buttonText: '点击复制',
+        errorText: '错误!',
+        successText: '复制成功！'
+      },
+      // 评论
+      // disqus: 'shortname'
+      // 字数统计
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(180,180,180)',
+        language:'chinese'
+      },
+      // ...
+      tabs: {
+        persist    : true,      // default
+        sync       : true,      // default
+        theme      : 'classic', // default material/classic
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- emoji表情 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- 搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 忽略双音符 -->
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+  <!-- plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 谷歌统计 - Google Analytics -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+  <!-- 外链脚本 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <!-- 图片缩放 - Zoom image ![](image.png ":no-zoom") -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 在git上编辑 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  <!-- 代码即时预览 -->
+  <script src="//unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/docsify-demo-box-vue@{version}/dist/docsify-demo-box-vue.min.js"></script>
+  <!-- 复制到剪贴板 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 评论 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script> -->
+  <!-- 分页导航插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- codefund  -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+  
+</body>
+</html>
