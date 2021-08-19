@@ -3,4 +3,4 @@
 
 ---
 
-[一个菜鸟程序员的技术栈](http://localhost:3000/_media/skill.pdf)
+[一个菜鸟程序员的技术栈](./_media/skill.pdf)
