@@ -1,0 +1,8 @@
+.app-nav a {
+  cursor: pointer;
+}
+.app-nav > ul > li > ul > li > a:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #bfbfbf;
+}

@@ -19,7 +19,7 @@ Elasticsearch 是一个分布式、RESTful 风格的搜索和数据分析引擎�
 
 1.[官方下载](https://www.elastic.co/cn/downloads/elasticsearch)  
 2.选择自己系统对应的版本（我这里下载的是linux的版本）  
-![图片](/images/download-elasticsearch.png)
+![图片](../../../images/download-elasticsearch.png)
 3.下载下来后是一个.tar.gz的压缩包  
 elasticsearch-7.14.0-linux-x86_64.tar.gz  
 ![图片](../../../images/softs.png)

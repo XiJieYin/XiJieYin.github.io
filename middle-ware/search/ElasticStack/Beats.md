@@ -19,13 +19,13 @@ Beats 是一个免费且开放的平台，集合了多种单一用途数据采�
 
 1.[官方下载](https://www.elastic.co/cn/downloads/beats/)  
 这里我们选择使用filebeat  
-![beats](./images/download_beats.png)
+![beats](../../../images/download_beats.png)
 
 2.选择自己系统对应的版本（我这里下载的是linux的版本）  
-![下载filebeat](./images/download_filebeat.png)
+![下载filebeat](../../../images/download_filebeat.png)
 3.下载来后是一个tar.gz的压缩包  
 filebeat-7.14.0-linux-x86_64.tar.gz
-![图片](./images/softs.png)
+![图片](../../../images/softs.png)
 
 [解压命令](https://www.runoob.com/linux/linux-comm-tar.html)
 
