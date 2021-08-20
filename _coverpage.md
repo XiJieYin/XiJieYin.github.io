@@ -1,13 +1,15 @@
 <!-- _coverpage.md -->
 
-![logo](_media/icon.svg)
+<!-- ![logo](./_media/joke.jpg) -->
+<img src="./_media/joke.jpg" style="border-radius: 50%;width: 250px;"/>
 
-# Edit by docsify <small>3.5</small>
+# Edited by docsify <small>3.5</small>
 
 > 一个菜鸟程序员的技术栈。
 
-- Spring、Maven、Mybatis
-- MySQL、Redis、MongoDB
+- Spring、Maven、Mybatis、Alibaba
+- MySQL、Redis、MongoDB、
+- HTML5、Javascript
 - VUE
 - ...
 

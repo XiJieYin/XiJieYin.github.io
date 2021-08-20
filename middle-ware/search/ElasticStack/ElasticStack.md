@@ -53,4 +53,4 @@ Elastic Stack 就是 ELK Stack，但是更加灵活，可以帮助人们出色�
 
 ### [下载搭建所需要的软件](https://www.elastic.co/cn/start)（这里以linux搭建为例，windows类似）
 
-![包](../../images/download-elastic-stack-all.png)
+![包](../../../images/download-elastic-stack-all.png)

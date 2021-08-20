@@ -1,2 +1,0 @@
-* [:relaxed:](/home)
-* [:man:](/home)
