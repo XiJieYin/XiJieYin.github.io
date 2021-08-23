@@ -8,7 +8,7 @@
 > 一个菜鸟程序员的技术栈。
 
 - Spring、Maven、Mybatis、Alibaba
-- MySQL、Redis、MongoDB、
+- MySQL、Redis、ElasticSearch、
 - HTML5、Javascript
 - VUE
 - ...
