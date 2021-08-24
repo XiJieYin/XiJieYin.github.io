@@ -1,4 +1,4 @@
-- [首页](home.md "我还是从前那个少年")
+- [首页](home.md "What have you been doing all your life?")
 - [前端](/web/web.md)
 - [middle-ware](/middle-ware/middle-ware.md "中间件")
   - [search](/middle-ware/search/search.md "搜索")
@@ -12,4 +12,5 @@
       - [mysql](/middle-ware/database/rdbms/mysql.md "mmysql")
     - [nosql](/middle-ware/database/nosql/nosql.md "非关系型数据库")
       - [redis](/middle-ware/database/nosql/redis.md)
+- [运维](/om/om.md)
 - [other](/other/other.md "其他")
