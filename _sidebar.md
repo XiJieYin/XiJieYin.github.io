@@ -1,5 +1,6 @@
 - [首页](home.md "What have you been doing all your life?")
 - [前端](/web/web.md)
+- [后端](/server/server.md)
 - [middle-ware](/middle-ware/middle-ware.md "中间件")
   - [search](/middle-ware/search/search.md "搜索")
     - [ElasticStack](/middle-ware/search/ElasticStack/ElasticStack.md "ElasticStack")
@@ -13,4 +14,7 @@
     - [nosql](/middle-ware/database/nosql/nosql.md "非关系型数据库")
       - [redis](/middle-ware/database/nosql/redis.md)
 - [运维](/om/om.md)
+  - [Telnet 安装](/om/some/tel.md)
 - [other](/other/other.md "其他")
+  - [markdown流程图语法介绍](/other/some/markdown.md)
+  

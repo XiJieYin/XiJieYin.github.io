@@ -10,6 +10,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
+    <!-- // Import mermaid -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css"
+    />
+
     <!-- Theme: Simple Dark -->
     <link
       rel="stylesheet"
@@ -32,6 +38,7 @@
       rel="stylesheet"
       href="./_plugins/change-themes/css/change-themes.css"
     />
+
     <style type="text/css">
       body {
         overflow: auto !important;
@@ -78,11 +85,16 @@
         <img style="margin: 50px auto" src="/images/loading.gif" />
       </div>
     </div>
+
+    <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>
       // var jsResources = '<scr' + 'ipt src="//unpkg.com/vue/dist/vue.js"></scr' + 'ipt>';
       // var cssResources = '@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");';
       // var bootCode = 'var globalVariable = "leon"';
       // var globalVariable = "leon";
+      var num = 0;
+      mermaid.initialize({ startOnLoad: false });
+
       window.$docsify = {
         repo: "https://github.com/XiJieYin/XiJieYin.github.io/tree/docs",
         plugins: [
@@ -108,7 +120,7 @@
         //定义路由别名，可以更自由的定义路由规则。 支持正则。
         alias: {
           "/.*/_sidebar.md": "/_sidebar.md",
-          '/.*/_navbar.md' : '/_navbar.md',
+          "/.*/_navbar.md": "/_navbar.md",
         },
         coverpage: true, //封面
         // logo: '/_media/icon.svg',//侧边栏中出现的网站图标
@@ -172,6 +184,20 @@
           tabComments: true, // default
           tabHeadings: true, // default
         },
+        markdown: {
+          renderer: {
+            code: function (code, lang) {
+              if (lang === "mermaid") {
+                return (
+                  '<div class="mermaid" style="background-color:#fff;">' +
+                  mermaid.render("mermaid-svg-" + num++, code) +
+                  "</div>"
+                );
+              }
+              return this.origin.code.apply(this, arguments);
+            },
+          },
+        },
       };
     </script>
     <!-- Docsify v4 -->
@@ -209,15 +235,38 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
     <!-- 动态引入文件 -->
     <script src="./_plugins/change-themes/js/import-file.js"></script>
-    <script>      
-      //导入文件      
+
+    <!-- flowchart -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="http://flowchart.js.org/flowchart-latest.js"></script> -->
+
+    <script>
+      //导入文件
       let themes = {
-        vue:"//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css",
-        simple:"https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css",
-        "dark":"https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css",
-        dolphin:"//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dolphin.css"
+        vue: "//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css",
+        simple:
+          "https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css",
+        dark: "https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css",
+        dolphin: "//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dolphin.css",
       };
       importFile.iniThemes(themes);
+
+      // window.onload = function(){
+      //   let flows = document.getElementsByClassName('lang-flow');
+      //   if(flows && flows.length>0){
+      //     for(let i = 0;i<flows.length;i++){
+      //       let flow = flows[i];
+      //       let code = flow.textContent;
+      //       let chart;
+      //       if (chart) {
+      //         chart.clean();
+      //       }
+      //       flow.innerHTML = '';
+      //       chart = flowchart.parse(code);
+      //       chart.drawSVG(flow);
+      //     }
+      //   }
+      // }
     </script>
   </body>
 </html>
