@@ -17,4 +17,5 @@
   - [Telnet 安装](/om/some/tel.md)
 - [other](/other/other.md "其他")
   - [markdown流程图语法介绍](/other/some/markdown.md)
+  - [如何利用github白嫖网站](/other/some/OwnInternetStation.md)
   
