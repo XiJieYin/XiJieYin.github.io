@@ -1,8 +1,0 @@
-- [首页](home.md "我还是从前那个少年")
-- [middle-ware](/middle-ware/middle-ware.md)
-    - [search](/middle-ware/search/search.md)
-        - [ElasticStack](/middle-ware/search/ElasticStack/ElasticStack.md)
-            -  [ElasticSearch](/middle-ware/search/ElasticStack/ElasticSearch.md)
-            -  [Logstash](/middle-ware/search/ElasticStack/Logstash.md)
-            -  [Kibana](/middle-ware/search/ElasticStack/Kibana.md)
-            -  [Beats](/middle-ware/search/ElasticStack/Beats.md)
