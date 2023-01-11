@@ -1,47 +1,135 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="text/javascript">
-      function toDoc(elementId) {
-        var selected = document.getElementById(elementId);
-        var index = selected.selectedIndex;
-        if (selected.options[index].value) {
-          location.href = selected.options[index].value;
-        }
-      }
-    </script>
-  </head>
-  <body style="width: 700px; margin: 400px auto; text-align: center">
-    <div>
-      <label for="gx-cloud">
-        gx-cloud 基础框架:
-        <select
-          id="gx-cloud"
-          style="height: 25px; width: 240px; line-height: 25px"
-        >
-          <option value="">====版本号====</option>
-          <option value="gx-cloud-doc/2.2.1/index.html">2.2.1</option>
-        </select>
-      </label>
-      <button type="button" onclick="toDoc('gx-cloud')">查看</button>
-    </div>
-    <br />
-    <div>
-      <label for="gx-cloud-tools">
-        gx-cloud-tools 工具包:
-        <select
-          id="gx-cloud-tools"
-          style="height: 25px; width: 240px; line-height: 25px"
-        >
-          <option value="">====版本号====</option>
-          <option value="gx-cloud-tools-doc/2.1.4/index.html">2.1.4</option>
-        </select>
-      </label>
-      <button type="button" onclick="toDoc('gx-cloud-tools')">查看</button>
-    </div>
-  </body>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2048游戏</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/2048index.js"></script>
+		<script type="text/javascript">
+			function toDoc(elementId) {
+			  var selected = document.getElementById(elementId);
+			  var index = selected.selectedIndex;
+			  if (selected.options[index].value) {
+				location.href = selected.options[index].value;
+			  }
+			}
+		  </script>
+	</head>
+	<body>
+		<!--构建游戏框架S-->
+		<div>
+			<!--得分区 S-->
+			<div class="scoringArea">您现在得分 <span class="score">0</span> 分 </div>
+			<!--得分区 E-->
+			<div class="gameFrame">
+				<div class="gameFrameRow"> 
+					<ul class="gameFrameUl">
+						<li class="gameFrameCell "> 
+							<!--<span class="color1">
+								2
+							</span>-->
+						</li>
+						<li class="gameFrameCell"> 
+							<!--<span class="color2">
+								4
+							</span>-->
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+					</ul>
+				</div>
+				<div class="gameFrameRow"> 
+					<ul class="gameFrameUl">
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+					</ul>
+				</div>
+				<div class="gameFrameRow"> 
+					<ul class="gameFrameUl">
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+					</ul>
+				</div>
+				<div class="gameFrameRow"> 
+					<ul class="gameFrameUl">
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+						<li class="gameFrameCell"> 
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--游戏开始按键S-->
+			<div class="operateKey">
+				<button class="gameControlButton gameStart" >开始</button>
+				<!--上下左右操作键S-->
+				<div class="directionsKey">
+					<div>
+						<span class="upBtn">↑</span>
+					</div>
+					<div>
+						<span class="leftBtn">←</span>
+						<span class="downBtn">↓</span>
+						<span class="rightBtn">→</span>
+					</div>
+				</div>
+				<!--上下左右操作键E-->
+			</div>
+			<!--游戏开始按键E--0>
+			
+			
+		</div>
+		<!--构建游戏框架E-->
+		<br>
+		<div style="text-align: center;">
+			<div>
+				<label for="gx-cloud">
+					gx-cloud 基础框架:
+					<select
+					id="gx-cloud"
+					style="height: 25px; width: 240px; line-height: 25px"
+					>
+					<option value="">====版本号====</option>
+					<option value="gx-cloud-doc/2.2.1/index.html">2.2.1</option>
+					</select>
+				</label>
+				<button type="button" onclick="toDoc('gx-cloud')">查看</button>
+			</div>
+			<br />
+			<div>
+				<label for="gx-cloud-tools">
+					gx-cloud-tools 工具包:
+					<select
+					id="gx-cloud-tools"
+					style="height: 25px; width: 240px; line-height: 25px"
+					>
+					<option value="">====版本号====</option>
+					<option value="gx-cloud-tools-doc/2.1.4/index.html">2.1.4</option>
+					</select>
+				</label>
+				<button type="button" onclick="toDoc('gx-cloud-tools')">查看</button>
+			</div>
+		</div>
+	</body>
 </html>
